@@ -1,15 +1,19 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Weather-Check</title>
-  <meta name="description" lang="en" content="weather check provides detailed information about the weather with rich user interface">
+  <meta name="description" lang="en"
+    content="weather check provides detailed information about the weather with rich user interface">
   <meta name="keywords" lang="en" content="weather, city, search, climate, current, rain">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" media="screen" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
 </head>
+
 <body>
   <!--container starts here-->
   <div class="container">
@@ -37,3 +41,51 @@
       </div>
     </header>
     <!--header ends here-->
+    <!--main starts here-->
+    <main>
+      <div class="main-banner">
+        <div class="wrapper">
+          <form action="#FIXME" method="GET" name="RegForm">
+            <div>
+              <input type="text" name="location" id="location" placeholder="Find your location..." />
+              <input type="submit" value="Find" id="submit" />
+            </div>
+          </form>
+          <div class="weather-card">
+            <div class="weather-head cf">
+              <span class="day">Monday</span>
+              <span class="date cf">6 Oct</span>
+            </div>
+            <div class="weather-body">
+              <span class="location">New York</span>
+              <div class="degree">
+                <span class="num">23<sup>o</sup>C</span>
+                <span class="weather-image">
+                  <img src="assets/images/icons/icon-1.svg" alt="" width="90">
+                </span>
+              </div>
+              <span class="weather-details"><img src="assets/images/icon-umberella.png" alt="percipitation">20%</span>
+              <span class="weather-details"><img src="assets/images/icon-wind.png" alt="wind">18km/h</span>
+              <span class="weather-details"><img src="assets/images/icon-compass.png" alt="direction">East</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--main ends here-->
+
+    <!--footer starts here-->
+    <footer>
+      <div class="wrapper">
+
+      </div>
+    </footer>
+    <!--footer ends here-->
+
+  </div>
+  <!--container ends here-->
+  <script src="js/vendors/jquery-1.8.3.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
