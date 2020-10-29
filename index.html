@@ -48,7 +48,7 @@
       <div class="main-banner">
         <div class="wrapper">
           <form action="#FIXME" method="GET" name="RegForm">
-            <div>
+            <div id="formBar">
               <input type="text" name="location" id="location" placeholder="Find your location..." />
               <input type="submit" value="Find" id="submit" />
             </div>
@@ -63,12 +63,16 @@
               <div class="degree">
                 <span class="num">23<sup>o</sup>C</span>
                 <span class="weather-image">
-                  <img src="assets/images/icons/icon-1.svg" alt="" width="90" />
+                  <img src="assets/images/icons/icon-1.svg" id="weather-icon" alt="" width="90" />
                 </span>
               </div>
-              <span class="weather-details"><img src="assets/images/icon-umberella.png" alt="percipitation" />20%</span>
-              <span class="weather-details"><img src="assets/images/icon-wind.png" alt="wind" />18km/h</span>
-              <span class="weather-details"><img src="assets/images/icon-compass.png" alt="direction" />East</span>
+              <span class="weather-details"><img src="assets/images/icon-umberella.png" alt="percipitation" /><span
+                  class="humidity">20%</span>
+              </span>
+              <span class="weather-details"><img src="assets/images/icon-wind.png" alt="wind" /><span
+                  class="wind">18km/h</span></span>
+              <span class="weather-details"><img src="assets/images/icon-compass.png" alt="direction" /><span
+                  class="direction">East</span></span>
             </div>
           </div>
         </div>
@@ -78,34 +82,44 @@
           <h2>live cameras</h2>
           <ul class="camera-row">
             <li class="camera-coloumn">
-              <figure class="live-camera-cover">
+              <figure class="live-camera-cover" id="video1">
                 <img src="assets/images/live-camera-1.jpg" alt="video" />
               </figure>
               <h3 class="camera-location">new york</h3>
               <span class="camera-date">8 oct, 8:00AM</span>
             </li>
             <li class="camera-coloumn">
-              <figure class="live-camera-cover">
+              <figure class="live-camera-cover" id="video2">
                 <img src="assets/images/live-camera-2.jpg" alt="video" />
               </figure>
               <h3 class="camera-location">los angeles</h3>
               <span class="camera-date">8 oct, 8:00AM</span>
             </li>
             <li class="camera-coloumn">
-              <figure class="live-camera-cover">
+              <figure class="live-camera-cover" id="video3">
                 <img src="assets/images/live-camera-3.jpg" alt="video" />
               </figure>
               <h3 class="camera-location">chicago</h3>
               <span class="camera-date">8 oct, 8:00AM</span>
             </li>
             <li class="camera-coloumn">
-              <figure class="live-camera-cover">
+              <figure class="live-camera-cover" id="video4">
                 <img src="assets/images/live-camera-4.jpg" alt="video" />
               </figure>
               <h3 class="camera-location">london</h3>
               <span class="camera-date">8 oct, 8:00AM</span>
             </li>
           </ul>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <video id="myVideo" controls autoplay muted>
+                <source src="assets/videos/video1.mp4" />
+                <track label="English" kind="captions" srclang="en" default />
+              </video>
+            </div>
+          </div>
         </div>
       </section>
       <section class="list-of-content">
@@ -309,8 +323,8 @@
     <!--footer ends here-->
   </div>
   <!--container ends here-->
-  <script src="js/vendors/jquery-1.8.3.min.js"></script>
-  <script src="js/script.js"></script>
+  <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script> -->
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
