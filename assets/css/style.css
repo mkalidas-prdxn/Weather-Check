@@ -338,5 +338,31 @@ header span {
   color: #bfc1c8;
   font-size: 9.6px;
 }
+/* 3.1. Navigation
+   ========================================================================== */
+.hamburger{ display: none; }
+header nav { float: right; }
 
+header nav li {
+  margin-left: 6.5px;
+  display: inline-block;
+}
+
+header nav a {
+  padding: 4.8px 23px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 13.2px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+header nav a[title~="live"] { text-transform: none; }
+
+header nav a:hover,
+header .active {
+  border: 2px solid #009ad8;
+  color: #009ad8;
+}
 
