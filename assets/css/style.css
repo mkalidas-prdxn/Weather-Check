@@ -965,4 +965,276 @@ background-color: #1e202b;
   font-size: 15.2px;
 }
 
+/* ==========================================================================
+   7. Media querries
+   ========================================================================== */
+@media only screen and (max-width: 995px) {
+  .wrapper {
+    padding: 0 5.363%;
+  }
+
+  header nav li {
+    margin-left: 4.5px;
+  }
+
+  header nav a {
+    padding: 4.8px 14px;
+  }
+
+  .weather-card {
+    width: 52.95%;
+    max-width: 400px;
+  }
+  .num {
+    /* font-size: 85px; */
+    margin-right: 11.94%;
+  }
+  .list-of-content article {
+    padding-left: 80px;
+  }
+  .weather-analysis {
+    /* width: 31.6%; */
+    margin: 0px 15px 0px 15px;
+  }
+  .social-icons {
+    margin-left: 9.5%;
+  }
+
+  .list-content-row {
+    display: block;
+  }
+  .list-content-coloumn {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .features .wrapper {
+    display: block;
+  }
+  .app-feature {
+    width: 48%;
+    display: inline-block;
+    vertical-align: text-bottom;
+  }
+  .weather-analysis {
+    width: 48%;
+    margin: 0px 0px 0px 15px;
+    display: inline-block;
+  }
+  .awesome-pic {
+    width: 100%;
+    margin: auto;
+  }
+  .awesome-pic li img:hover {
+    border-radius: 10px;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  .gallery-info {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header nav {
+    height: 40px;
+  }
+  .hamburger {
+    width: 40px;
+    height: 40px;
+    padding: 25px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    float: right;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .hamburger:hover,
+  .activeHam:hover {
+    border: 2px solid #069ad8;
+  }
+  .hamburger:hover .line {
+    background-color: #069ad8;
+  }
+
+  .line {
+    height: 2px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    right: 10%;
+    background-color: #fff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .line1 {
+    top: 30%;
+    left: 30%;
+  }
+  .line2 {
+    top: 44.5%;
+    left: 30%;
+  }
+  .line3 {
+    top: 60%;
+    left: 30%;
+  }
+
+  /* .activeHam {
+    right: 2.5%;
+  } */
+  .activeHam .line1 {
+    top: 45%;
+    -webkit-transform: rotateZ(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotateZ(45deg);
+  }
+
+  .activeHam .line2 {
+    opacity: 0;
+  }
+
+  .activeHam .line3 {
+    top: 45%;
+    -webkit-transform: rotateZ(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotateZ(-45deg);
+  }
+
+  .menu {
+    width: 0%;
+    height: 85%;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 145px;
+    right: 0;
+    background-color: #1e202b;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  header nav li {
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #3d3f4b;
+    display: block;
+    background-color: #272937;
+  }
+  header nav a {
+    padding: 15px;
+    display: block;
+    text-align: center;
+  }
+  header nav a:hover,
+  header .active {
+    border: none;
+    color: #009ad8;
+  }
+  header nav a {
+    border: none;
+  }
+
+  header nav li:first-child {
+    border-radius: 10px 10px 0px 0px;
+  }
+  header nav li:last-child {
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .hamMenuOpen {
+    width: 100%;
+  }
+
+  .weather-card {
+    width: 100%;
+  }
+  .weather-details {
+    margin-right: 8.4px;
+  }
+  .camera-row {
+    display: block;
+  }
+  .camera-coloumn {
+    width: 100%;
+    margin: 32px 0px;
+    display: block;
+  }
+  .live-camera figure {
+    margin-bottom: 22px;
+  }
+  .app-feature {
+    width: 100%;
+    display: block;
+  }
+  .weather-analysis {
+    width: 100%;
+    margin: 0px;
+    display: block;
+  }
+  .awesome-pic li img:hover {
+    border-radius: 5px;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  footer form {
+    width: 100%;
+    display: block;
+  }
+  footer input[name~="subscribe"] {
+    padding: 0px 15px;
+  }
+  .social-icons {
+    margin: auto;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .copyright {
+    margin: 10px 0px 15px;
+  }
+
+  .galleryColoumn {
+    display: block;
+  }
+
+  .galleryCard {
+    width: 100%;
+  }
+
+  .coloumn1 {
+    margin: auto 0px 28px;
+  }
+  .galleryCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .galleryCard .gallery-image {
+    height: auto;
+  }
+  .gallery-info {
+    padding: 3% 5%;
+  }
+  .gallery-info p {
+    padding: 10px 0px;
+    font-size: 12.2px;
+    line-height: 1.4;
+  }
+  .gallery-info h2 {
+    font-size: 14.2px;
+  }
+}
+
 
