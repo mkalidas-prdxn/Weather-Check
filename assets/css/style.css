@@ -296,3 +296,47 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 700;
   line-height: normal;
 }
+
+/* ==========================================================================
+   3. Header
+   ========================================================================== */
+
+header {
+  width: 100%;
+  padding: 47px 0;
+  background-color: #1e202b;
+}
+
+header .logo { float: left; }
+
+header .logoImage {
+  margin-right: 9px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header img { width: 60px; }
+
+header .logoText {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header h1 {
+  margin-bottom: 4px;
+  font-size: 15px;
+  color: #fff;
+}
+
+header h1::first-letter {
+  display: none;
+  text-transform: uppercase;
+}
+
+header span {
+  display: block;
+  color: #bfc1c8;
+  font-size: 9.6px;
+}
+
+
