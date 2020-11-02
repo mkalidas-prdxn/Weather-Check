@@ -338,6 +338,7 @@ header span {
   color: #bfc1c8;
   font-size: 9.6px;
 }
+
 /* 3.1. Navigation
    ========================================================================== */
 .hamburger{ display: none; }
@@ -366,3 +367,83 @@ header .active {
   color: #009ad8;
 }
 
+/* ==========================================================================
+   4. Main (Index/Home page)
+   ========================================================================== */
+
+
+/* 4.1. Main banner
+   ========================================================================== */
+
+.main-banner {
+  width: 100%;
+  height: 330px;
+  padding: 66px 0px;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-banner form {
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.main-banner form input {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+}
+
+.main-banner form input::-webkit-input-placeholder { font-weight: 500; }
+.main-banner form input::-moz-placeholder { font-weight: 500; }
+.main-banner form input:-ms-input-placeholder { font-weight: 500; }
+.main-banner form input::-ms-input-placeholder { font-weight: 500; }
+.main-banner form input::placeholder { font-weight: 500; }
+
+.main-banner input[type~="text"] {
+  width: 100%;
+  padding: 17px 48px 17px 17px;
+  border: 2px solid #1e202b;
+  background: #1e202b;
+  color: #fff;
+  letter-spacing: -0.07px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main-banner input[type~="submit"] {
+  padding: 0px 38px;
+  position: absolute;
+  top: 4.5px;
+  right: 5px;
+  bottom: 5px;
+  background-color: #009ad8;
+  color: #fff;
+  letter-spacing: -0.5px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main-banner form:hover input[type~="text"] {
+  border: 2px solid #009ad8;
+  background: #292d3c;
+}
+
+.main-banner input[type~="submit"]:hover {
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.errorMsg,
+.errorMsgEmail {
+  position: absolute;
+  left: 2%;
+  top: 100%;
+  color: #ffb8b8;
+  font-weight: 500;
+}
