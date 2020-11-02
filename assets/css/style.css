@@ -839,3 +839,49 @@ video { width: 100%; }
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+/* ==========================================================================
+   5. Main (Photos page)
+   ========================================================================== */
+
+/* 5.1. Main bar
+   ========================================================================== */
+
+.main-bar-url {
+  width: 100%;
+  padding: 18px 28px;
+  border-radius: 40px;
+  background-color: #262936;
+  font-size: 13px;
+  transition: all 0.7s;
+}
+.menuBarBackground {
+background-color: #1e202b;
+}
+.main-bar-url a {
+  color: #bfc1c8;
+  font-size: 12px;
+}
+.main-bar-url a:hover{
+  color: #069ad8;
+}
+.main-bar-url span {
+  font-size: 12px;
+}
+.main-bar-url a:after {
+  content: " ";
+  width: 12px;
+  height: 7px;
+  margin: 0 9.5px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/arrow-gray.png) no-repeat;
+}
+.main-bar-url {
+  text-transform: capitalize;
+}
+
+.main-bar-url span {
+  color: white;
+}
+
