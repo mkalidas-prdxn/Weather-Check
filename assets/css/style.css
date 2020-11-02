@@ -447,3 +447,83 @@ header .active {
   color: #ffb8b8;
   font-weight: 500;
 }
+
+/* 4.1.1. Weather card
+   ========================================================================== */
+
+.weather-card {
+  width: 49.95%;
+  margin: auto;
+  background: #323544;
+  border-radius: 10px;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.weather-fade { opacity: 0.6; }
+
+.weather-head {
+  padding: 10px 10px;
+  border-radius: 10px 10px 0px 0px;
+  font-weight: 500;
+  background-color: #2e303e;
+}
+
+.day {
+  float: left;
+  font-size: 13px;
+}
+
+.date {
+  float: right;
+  font-size: 13px;
+}
+
+.weather-body {
+  padding: 28px 18px;
+  text-align: left;
+}
+
+.location {
+  font-size: 17.2px;
+  font-weight: 400;
+}
+
+.degree {
+  color: #fff;
+  font-weight: 700;
+}
+
+.num {
+  margin-right: 30px;
+  font-size: 85px;
+}
+
+.num sup {
+  top: -33px;
+  font-size: 65px;
+}
+
+.weather-image {
+  height: 50px;
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.weather-image img { width: 85px; }
+
+.weather-details {
+  margin-right: 18px;
+  font-size: 13.7px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.weather-details img {
+  width: 20px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
