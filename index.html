@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
-  <title>Weather-Check</title>
-  <meta name="description" lang="en"
-    content="weather check provides detailed information about the weather with rich user interface" />
-  <meta name="keywords" lang="en" content="weather, city, search, climate, current, rain" />
+  <title>Weather-check</title>
+  <meta name="description" lang="en" content="weather check provides detailed information about the weather with rich user interface" />
+  <meta name="keywords" lang="en" content="weather, city, search, climate, current, rain, images" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/vendor/fonts.css" />
+  <link href="assets/vendor/fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" media="screen" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/fonts.css" />
-  <link rel="stylesheet" href="assets/vendor/all.min.css" />
-  <link rel="stylesheet" href="assets/vendor/fontawesome.min.css" />
 </head>
-
 <body>
   <!--container starts here-->
   <div class="container">
     <!--header starts here-->
     <header class="cf">
-      <div class="wrapper">
+      <div class="wrapper cf">
         <a href="index.html" title="logo" class="logo">
           <div class="logoImage">
             <img src="assets/images/logo.png" alt="logo" />
@@ -31,20 +26,28 @@
             <span>tagline goes here</span>
           </div>
         </a>
+        <!--nav starts here-->
+        <div class="hamburger cf" id="hamburger">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
         <nav class="mainNav cf">
-          <ul class="menu">
+          <ul class="menu cf">
             <li><a href="index.html" title="home" class="active">home</a></li>
             <li><a href="#FIXME" title="news">news</a></li>
             <li><a href="#FIXME" title="live cameras">Live cameras</a></li>
-            <li><a href="#FIXME" title="photos">photos</a></li>
+            <li><a href="photo.html" title="photos">photos</a></li>
             <li><a href="#FIXME" title="contact">contact</a></li>
           </ul>
         </nav>
+        <!--nav ends here-->
       </div>
     </header>
     <!--header ends here-->
     <!--main starts here-->
     <main>
+      <!--main banner starts here-->
       <div class="main-banner">
         <div class="wrapper">
           <form action="#FIXME" method="GET" name="RegForm">
@@ -53,6 +56,7 @@
               <input type="submit" value="Find" id="submit" />
             </div>
           </form>
+          <!--weather card starts here-->
           <div class="weather-card">
             <div class="weather-head cf">
               <span class="day">Monday</span>
@@ -75,8 +79,11 @@
                   class="direction">East</span></span>
             </div>
           </div>
+          <!--weather card ends here-->
         </div>
       </div>
+      <!--main banner ends here-->
+      <!--live camera starts here-->
       <section class="live-camera">
         <div class="wrapper">
           <h2>live cameras</h2>
@@ -110,28 +117,27 @@
               <span class="camera-date">8 oct, 8:00AM</span>
             </li>
           </ul>
-
           <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <video id="myVideo" controls autoplay muted>
-                <source src="assets/videos/video1.mp4" />
-                <track label="English" kind="captions" srclang="en" default />
-              </video>
+            <div class="modal-scroll">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <video id="myVideo" controls autoplay muted>
+                  <source src="assets/videos/video1.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="list-of-content">
+      <!--live camera ends here-->
+      <!--list of content starts here-->
+      <div class="list-of-content">
         <div class="wrapper">
           <ul class="list-content-row">
             <li class="list-content-coloumn">
               <article>
-                <span class="list-content-number"><a href="#FIXME" title="number"></a> 06.10</span>
-                <h3>
-                  <a href="#FIXME" title="article heading">Doloremque laudantium totam sequi
-                  </a>
-                </h3>
+                <span class="list-content-number"><a href="#FIXME" title="number"> 06.10</a></span>
+                <h3><a href="#FIXME" title="article heading">Doloremque laudantium totam sequi</a></h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Illo saepe assumenda dolorem modi, expedita voluptatum
@@ -145,10 +151,8 @@
             </li>
             <li class="list-content-coloumn">
               <article>
-                <span class="list-content-number"><a href="#FIXME" title="number"></a> 06.10</span>
-                <h3>
-                  <a href="#FIXME" title="article heading">Doloremque laudantium totam sequi
-                  </a>
+                <span class="list-content-number"><a href="#FIXME" title="number"> 06.10</a></span>
+                <h3><a href="#FIXME" title="article heading">Doloremque laudantium totam sequi</a>
                 </h3>
                 <p>
                   Nobis architecto consequatur ab, ea, eum autem aperiam
@@ -162,10 +166,8 @@
             </li>
             <li class="list-content-coloumn">
               <article>
-                <span class="list-content-number"><a href="#FIXME" title="number"></a> 06.10</span>
-                <h3>
-                  <a href="#FIXME" title="article heading">Doloremque laudantium totam sequi
-                  </a>
+                <span class="list-content-number"><a href="#FIXME" title="number"> 06.10</a></span>
+                <h3><a href="#FIXME" title="article heading">Doloremque laudantium totam sequi</a>
                 </h3>
                 <p>
                   Enim impedit officiis placeat qui recusandae doloremque
@@ -179,7 +181,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
+      <!--list of content ends here-->
+      <!--features starts here-->
       <section class="features">
         <div class="wrapper cf">
           <div class="app-feature">
@@ -187,9 +191,7 @@
             <ul>
               <li>
                 <span class="feature-arrow"><img src="assets/images/arrow.png" alt="arrow" /></span>
-                <h3>
-                  <a href="#FIXME" title="app-feature">natus error sit voluptatem accusantium</a>
-                </h3>
+                <h3><a href="#FIXME" title="app-feature">natus error sit voluptatem accusantium</a></h3>
                 <p>
                   Doloremque laudantium totam rem aperiam Inventore veritatis
                   et quasi architecto beatae vitae.
@@ -197,9 +199,7 @@
               </li>
               <li>
                 <span class="feature-arrow"><img src="assets/images/arrow.png" alt="arrow" /></span>
-                <h3>
-                  <a href="#FIXME" title="app-feature">natus error sit voluptatem accusantium</a>
-                </h3>
+                <h3><a href="#FIXME" title="app-feature">natus error sit voluptatem accusantium</a></h3>
                 <p>
                   Doloremque laudantium totam rem aperiam Inventore veritatis
                   et quasi architecto beatae vitae.
@@ -207,9 +207,7 @@
               </li>
               <li>
                 <span class="feature-arrow"><img src="assets/images/arrow.png" alt="arrow" /></span>
-                <h3>
-                  <a href="#FIXME" title="app-feature">natus error sit voluptatem accusantium</a>
-                </h3>
+                <h3><a href="#FIXME" title="app-feature">natus error sit voluptatem accusantium</a></h3>
                 <p>
                   Doloremque laudantium totam rem aperiam Inventore veritatis
                   et quasi architecto beatae vitae.
@@ -253,50 +251,57 @@
           <div class="awesome-pic cf">
             <h2>awesome photos</h2>
             <ul>
-              <li>
+              <li class="img-modal">
                 <a href="#FIXME" title="pics"><img src="assets/images/thumb-1.jpg" alt="pic" /></a>
               </li>
-              <li>
+              <li class="img-modal">
                 <a href="#FIXME" title="pics"><img src="assets/images/thumb-2.jpg" alt="pic" /></a>
               </li>
-              <li>
+              <li class="img-modal">
                 <a href="#FIXME" title="pics"><img src="assets/images/thumb-3.jpg" alt="pic" /></a>
               </li>
-              <li>
+              <li class="img-modal">
                 <a href="#FIXME" title="pics"><img src="assets/images/thumb-4.jpg" alt="pic" /></a>
               </li>
-              <li>
+              <li class="img-modal">
                 <a href="#FIXME" title="pics"><img src="assets/images/thumb-5.jpg" alt="pic" /></a>
               </li>
-              <li>
+              <li class="img-modal">
                 <a href="#FIXME" title="pics"><img src="assets/images/thumb-6.jpg" alt="pic" /></a>
               </li>
-              <li>
+              <li class="img-modal">
                 <a href="#FIXME" title="pics"><img src="assets/images/thumb-7.jpg" alt="pic" /></a>
               </li>
-              <li>
+              <li class="img-modal">
                 <a href="#FIXME" title="pics"><img src="assets/images/thumb-8.jpg" alt="pic" /></a>
               </li>
-              <li>
+              <li class="img-modal">
                 <a href="#FIXME" title="pics"><img src="assets/images/thumb-9.jpg" alt="pic" /></a>
               </li>
             </ul>
+            <div id="myModal-img" class="modal">
+              <div class="modal-scroll sl--scrollable">
+                <div class="modal-content">
+                  <span class="close closeImg">&times;</span>
+                  <img src="/assets/images/thumb-1.jpg" alt="img" id="myImg" class="myImg" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <!--features ends here-->
     </main>
     <!--main ends here-->
-
     <!--footer starts here-->
     <footer>
       <div class="wrapper">
         <form action="#FIXME" method="GET" name="SubForm">
-          <div>
+          <div id="emailBar">
             <input type="email" name="email" id="email" placeholder="Enter your email to subscribe..." />
             <input type="submit" name="subscribe" value="Subscribe" id="subscribe" />
           </div>
         </form>
-
         <ul class="social-icons">
           <li>
             <a href="#FIXME" class="facebook ficon" target="_blank" title="facebook">facebook</a>
@@ -311,7 +316,6 @@
             <a href="#FIXME" class="pintrest ficon" target="_blank" title="pintrest">pintrest</a>
           </li>
         </ul>
-
         <div class="copyright">
           <p>
             <a href="#FIXME" title="copyright-info">Copyright 2014 Company name.</a>
@@ -323,8 +327,6 @@
     <!--footer ends here-->
   </div>
   <!--container ends here-->
-  <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script> -->
   <script src="assets/js/script.js"></script>
 </body>
-
 </html>
