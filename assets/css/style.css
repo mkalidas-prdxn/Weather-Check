@@ -527,3 +527,133 @@ header .active {
   margin-right: 4px;
   vertical-align: middle;
 }
+
+/* 4.2. Live camera
+   ========================================================================== */
+
+.modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: #00160099;
+  overflow: hidden;
+}
+
+.modalToggle { display: block; }
+
+.modal-content {
+  max-width: 120vh;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 40px auto;
+  background: #323544;
+}
+
+.modal-scroll {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: #00106e33;
+  overflow: auto;
+}
+
+.close {
+  margin: -20px 10px 0px 0px;
+  float: right;
+  color: #fff;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.close:hover {
+  color: #0080b3;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+video { width: 100%; }
+.myImg { width: 100%; }
+.modalOpen { overflow-y: hidden; }
+.body { overflow: hidden; }
+.live-camera { padding: 238px 0px 96.5px; }
+
+.live-camera h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+.live-camera h2::first-letter { text-transform: capitalize; }
+
+.camera-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.camera-coloumn { width: 23%; }
+
+.live-camera figure {
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.live-camera-cover:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.live-camera figure img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+}
+
+.live-camera figure::after {
+  content: " ";
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(../images/play-button.png);
+}
+
+.camera-location {
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.camera-date {
+  display: block;
+  font-size: 10.5px;
+}
