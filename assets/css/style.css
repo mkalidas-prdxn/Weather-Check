@@ -884,4 +884,85 @@ background-color: #1e202b;
 .main-bar-url span {
   color: white;
 }
+/* 5.2. Gallery
+   ========================================================================== */
+.gallery {
+  padding: 67px 0px;
+}
+.galleryColoumn {
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.galleryCard {
+  width: 48.69%;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #272937;
+}
+.galleryCard .gallery-image {
+  width: 50%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.galleryCard img {
+  width: 100%;
+  /* height: 179px; */
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+.gallery-info {
+  width: 49%;
+  padding: 18px 16px 42px;
+  display: inline-block;
+  vertical-align: top;
+}
+.gallery-info h2 {
+  font-size: 15.2px;
+  font-weight: 400;
+}
+.gallery-info a {
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery-info a:hover {
+  color: #009ad8;
+}
+.gallery-image:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-filter: drop-shadow(4px 4px 6px #009ad8);
+  filter: drop-shadow(4px 4px 6px #009ad8);
+}
+.gallery-info p {
+  padding: 9.4px 0px 9px;
+  font-size: 13.2px;
+  line-height: 1.55;
+}
+.coloumn1 {
+  margin-right: 29px;
+}
+
+.stars::before {
+  content: "\f005\f005\f005\f005";
+  color: #009ad8;
+  font-family: "fontawesome";
+  font-size: 15.2px;
+}
+.stars::after {
+  margin-left: 0px;
+  content: "\f005";
+  color: #1e202b;
+  font-family: "fontawesome";
+  font-size: 15.2px;
+}
+
 
