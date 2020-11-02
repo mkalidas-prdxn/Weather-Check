@@ -728,3 +728,114 @@ video { width: 100%; }
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
+
+/* 4.4. Features
+   ========================================================================== */
+
+.features {
+  padding: 65px 0;
+  background-color: #1e202b;
+}
+
+.features .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features h2 {
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 33.8px;
+  font-weight: 300;
+}
+
+.features h2::first-letter { text-transform: capitalize; }
+.app-feature { width: 32%; }
+
+.app-feature li {
+  position: relative;
+  padding-left: 28px;
+}
+
+.app-feature li span {
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+
+.app-feature li img { width: 11px; }
+.app-feature h3 { font-size: 13.2px; }
+
+.app-feature p {
+  padding: 18px 0px 14px;
+  font-size: 13.4px;
+  letter-spacing: -0.1px;
+}
+
+.app-feature a {
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.app-feature a:hover { color: #009ad8; }
+.app-feature h3::first-letter { text-transform: capitalize; }
+
+.weather-analysis {
+  width: 31.6%;
+  margin: 0px 25px 0px 25px;
+}
+
+.weather-analysis li {
+  padding: 8px 0 11.5px;
+  border-bottom: 1px solid #ffffff1a;
+  font-size: 13.1px;
+}
+
+.weather-analysis li:last-child { border-bottom: none; }
+.weather-analysis li img { width: 11px; }
+
+.weather-analysis a {
+  padding-left: 4px;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.weather-analysis a:hover { color: #009ad8; }
+
+.awesome-pic {
+  width: 32.7%;
+  margin-right: -35px;
+  margin-left: -3px;
+}
+
+.awesome-pic h2 {
+  text-transform: capitalize;
+  margin-left: 4px;
+}
+
+.awesome-pic li a {
+  width: 33%;
+  padding: 5px;
+  float: left;
+}
+
+.awesome-pic li img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.awesome-pic li img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
