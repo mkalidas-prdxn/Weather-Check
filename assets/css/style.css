@@ -855,19 +855,17 @@ video { width: 100%; }
   font-size: 13px;
   transition: all 0.7s;
 }
-.menuBarBackground {
-background-color: #1e202b;
-}
+
+.menuBarBackground { background-color: #1e202b; }
+
 .main-bar-url a {
   color: #bfc1c8;
   font-size: 12px;
 }
-.main-bar-url a:hover{
-  color: #069ad8;
-}
-.main-bar-url span {
-  font-size: 12px;
-}
+
+.main-bar-url a:hover { color: #069ad8; }
+.main-bar-url span { font-size: 12px; }
+
 .main-bar-url a:after {
   content: " ";
   width: 12px;
@@ -877,31 +875,29 @@ background-color: #1e202b;
   vertical-align: middle;
   background: url(../images/arrow-gray.png) no-repeat;
 }
-.main-bar-url {
-  text-transform: capitalize;
-}
 
-.main-bar-url span {
-  color: white;
-}
+.main-bar-url { text-transform: capitalize; }
+.main-bar-url span { color: white; }
 
 /* 5.2. Gallery
    ========================================================================== */
-.gallery {
-  padding: 67px 0px;
-}
+
+.gallery { padding: 67px 0px; }
+
 .galleryColoumn {
   margin-bottom: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 .galleryCard {
   width: 48.69%;
   border-radius: 10px;
   display: inline-block;
   background-color: #272937;
 }
+
 .galleryCard .gallery-image {
   width: 50%;
   height: 100%;
@@ -911,31 +907,34 @@ background-color: #1e202b;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .galleryCard img {
   width: 100%;
-  /* height: 179px; */
   height: 100%;
   border-radius: 10px 0px 0px 10px;
 }
+
 .gallery-info {
   width: 49%;
   padding: 18px 16px 42px;
   display: inline-block;
   vertical-align: top;
 }
+
 .gallery-info h2 {
   font-size: 15.2px;
   font-weight: 400;
 }
+
 .gallery-info a {
   color: #fff;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.gallery-info a:hover {
-  color: #009ad8;
-}
+
+.gallery-info a:hover { color: #009ad8; }
+
 .gallery-image:hover {
   -webkit-transform: scale(1.02);
   -ms-transform: scale(1.02);
@@ -943,14 +942,14 @@ background-color: #1e202b;
   -webkit-filter: drop-shadow(4px 4px 6px #009ad8);
   filter: drop-shadow(4px 4px 6px #009ad8);
 }
+
 .gallery-info p {
   padding: 9.4px 0px 9px;
   font-size: 13.2px;
   line-height: 1.55;
 }
-.coloumn1 {
-  margin-right: 29px;
-}
+
+.coloumn1 { margin-right: 29px; }
 
 .stars::before {
   content: "\f005\f005\f005\f005";
@@ -958,6 +957,7 @@ background-color: #1e202b;
   font-family: "fontawesome";
   font-size: 15.2px;
 }
+
 .stars::after {
   margin-left: 0px;
   content: "\f005";
@@ -974,12 +974,14 @@ footer {
   padding: 46px 0;
   background-color: #272937;
 }
+
 footer form {
   width: 65.83%;
   margin-bottom: 30px;
   display: inline-block;
   position: relative;
 }
+
 footer input {
   border-radius: 30px;
   border: none;
@@ -989,6 +991,7 @@ footer input {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 footer input[type~="email"] {
   width: 100%;
   padding: 17px 100px 17px 17px;
@@ -996,6 +999,7 @@ footer input[type~="email"] {
   background: #1e202b;
   letter-spacing: -0.07px;
 }
+
 footer input[name~="subscribe"] {
   padding: 0px 18px;
   position: absolute;
@@ -1005,23 +1009,26 @@ footer input[name~="subscribe"] {
   background-color: #009ad8;
   letter-spacing: 0px;
 }
+
 footer form:hover input[type~="email"] {
   border: 2px solid #009ad8;
   background: #292d3c;
 }
+
 footer input[type~="submit"]:hover {
   -webkit-transform: scale(1.15);
   -ms-transform: scale(1.15);
   transform: scale(1.15);
 }
+
 .social-icons {
   margin-left: 10.74%;
   display: inline-block;
   vertical-align: top;
 }
-.social-icons li {
-  display: inline-block;
-}
+
+.social-icons li { display: inline-block; }
+
 .social-icons a {
   width: 37.46px;
   height: 37.46px;
@@ -1048,108 +1055,89 @@ footer input[type~="submit"]:hover {
   font-weight: normal;
   line-height: 1;
 }
+
 .facebook::before {
   content: "\f09a";
   left: 38%;
   top: 25%;
 }
+
 .twitter::before {
   content: "\f099";
   left: 25%;
   top: 25%;
 }
+
 .google::before {
   content: "\f0d5";
   left: 26%;
   top: 25%;
 }
+
 .pintrest::before {
   content: "\f0d2";
   left: 27%;
   top: 25%;
 }
 
-.social-icons a:hover {
-  background-color: #009ad8;
-}
-.social-icons li:hover .ficon::before {
-  color: #fff;
-}
+.social-icons a:hover { background-color: #009ad8; }
+.social-icons li:hover .ficon::before { color: #fff; }
+.copyright { margin: -2px 0px 15px; }
+.copyright p { font-size: 13.2px; }
 
-.copyright {
-  margin: -2px 0px 15px;
-}
-.copyright p {
-  font-size: 13.2px;
-}
 .copyright a {
   color: #bfc1c8;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.copyright a:hover {
-  color: #009ad8;
-}
+.copyright a:hover { color: #009ad8; }
+
 /* ==========================================================================
    7. Media querries
    ========================================================================== */
+
 @media only screen and (max-width: 995px) {
-  .wrapper {
-    padding: 0 5.363%;
-  }
 
-  header nav li {
-    margin-left: 4.5px;
-  }
-
-  header nav a {
-    padding: 4.8px 14px;
-  }
+  .wrapper { padding: 0 5.363%; }
+  header nav li { margin-left: 4.5px; }
+  header nav a { padding: 4.8px 14px; }
 
   .weather-card {
     width: 52.95%;
     max-width: 400px;
   }
-  .num {
-    /* font-size: 85px; */
-    margin-right: 11.94%;
-  }
-  .list-of-content article {
-    padding-left: 80px;
-  }
-  .weather-analysis {
-    /* width: 31.6%; */
-    margin: 0px 15px 0px 15px;
-  }
-  .social-icons {
-    margin-left: 9.5%;
-  }
 
-  .list-content-row {
-    display: block;
-  }
+  .num { margin-right: 11.94%; }
+  .list-of-content article { padding-left: 80px; }
+  .weather-analysis { margin: 0px 15px 0px 15px; }
+  .social-icons { margin-left: 9.5%; }
+  .list-content-row { display: block; }
+
   .list-content-coloumn {
     width: 100%;
     margin: 20px 0px;
   }
-  .features .wrapper {
-    display: block;
-  }
+
+  .features .wrapper { display: block; }
+
   .app-feature {
     width: 48%;
     display: inline-block;
     vertical-align: text-bottom;
   }
+
   .weather-analysis {
     width: 48%;
     margin: 0px 0px 0px 15px;
     display: inline-block;
   }
+
   .awesome-pic {
     width: 100%;
     margin: auto;
   }
+
   .awesome-pic li img:hover {
     border-radius: 10px;
     -webkit-transform: scale(1.05);
@@ -1157,15 +1145,12 @@ footer input[type~="submit"]:hover {
     transform: scale(1.05);
   }
 
-  .gallery-info {
-    width: 48%;
-  }
+  .gallery-info { width: 48%; }
 }
 
 @media only screen and (max-width: 767px) {
-  header nav {
-    height: 40px;
-  }
+  header nav { height: 40px; }
+
   .hamburger {
     width: 40px;
     height: 40px;
@@ -1180,13 +1165,10 @@ footer input[type~="submit"]:hover {
     -o-transition: all 0.5s;
     transition: all 0.5s;
   }
+
   .hamburger:hover,
-  .activeHam:hover {
-    border: 2px solid #069ad8;
-  }
-  .hamburger:hover .line {
-    background-color: #069ad8;
-  }
+  .activeHam:hover { border: 2px solid #069ad8; }
+  .hamburger:hover .line { background-color: #069ad8; }
 
   .line {
     height: 2px;
@@ -1204,18 +1186,17 @@ footer input[type~="submit"]:hover {
     top: 30%;
     left: 30%;
   }
+
   .line2 {
     top: 44.5%;
     left: 30%;
   }
+
   .line3 {
     top: 60%;
     left: 30%;
   }
 
-  /* .activeHam {
-    right: 2.5%;
-  } */
   .activeHam .line1 {
     top: 45%;
     -webkit-transform: rotateZ(45deg);
@@ -1223,9 +1204,7 @@ footer input[type~="submit"]:hover {
     transform: rotateZ(45deg);
   }
 
-  .activeHam .line2 {
-    opacity: 0;
-  }
+  .activeHam .line2 { opacity: 0; }
 
   .activeHam .line3 {
     top: 45%;
@@ -1248,6 +1227,7 @@ footer input[type~="submit"]:hover {
     -o-transition: all 0.5s;
     transition: all 0.5s;
   }
+
   header nav li {
     width: 90%;
     margin: auto;
@@ -1255,110 +1235,91 @@ footer input[type~="submit"]:hover {
     display: block;
     background-color: #272937;
   }
+
   header nav a {
     padding: 15px;
     display: block;
     text-align: center;
   }
+
   header nav a:hover,
   header .active {
     border: none;
     color: #009ad8;
   }
-  header nav a {
-    border: none;
-  }
 
-  header nav li:first-child {
-    border-radius: 10px 10px 0px 0px;
-  }
+  header nav a { border: none; }
+  header nav li:first-child { border-radius: 10px 10px 0px 0px; }
+
   header nav li:last-child {
     border: none;
     border-radius: 0px 0px 10px 10px;
   }
 
-  .hamMenuOpen {
-    width: 100%;
-  }
+  .hamMenuOpen { width: 100%; }
+  .weather-card { width: 100%; }
+  .weather-details { margin-right: 8.4px; }
+  .camera-row { display: block; }
 
-  .weather-card {
-    width: 100%;
-  }
-  .weather-details {
-    margin-right: 8.4px;
-  }
-  .camera-row {
-    display: block;
-  }
   .camera-coloumn {
     width: 100%;
     margin: 32px 0px;
     display: block;
   }
-  .live-camera figure {
-    margin-bottom: 22px;
-  }
+
+  .live-camera figure { margin-bottom: 22px; }
+
   .app-feature {
     width: 100%;
     display: block;
   }
+
   .weather-analysis {
     width: 100%;
     margin: 0px;
     display: block;
   }
+
   .awesome-pic li img:hover {
     border-radius: 5px;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
   }
+
   footer form {
     width: 100%;
     display: block;
   }
-  footer input[name~="subscribe"] {
-    padding: 0px 15px;
-  }
+
+  footer input[name~="subscribe"] { padding: 0px 15px; }
+
   .social-icons {
     margin: auto;
     width: 100%;
     display: block;
     text-align: center;
   }
-  .copyright {
-    margin: 10px 0px 15px;
-  }
 
-  .galleryColoumn {
-    display: block;
-  }
+  .copyright { margin: 10px 0px 15px; }
+  .galleryColoumn { display: block; }
+  .galleryCard { width: 100%; }
+  .coloumn1 { margin: auto 0px 28px; }
 
-  .galleryCard {
-    width: 100%;
-  }
-
-  .coloumn1 {
-    margin: auto 0px 28px;
-  }
   .galleryCard {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 
-  .galleryCard .gallery-image {
-    height: auto;
-  }
-  .gallery-info {
-    padding: 3% 5%;
-  }
+  .galleryCard .gallery-image { height: auto; }
+  .gallery-info { padding: 3% 5%; }
+
   .gallery-info p {
     padding: 10px 0px;
     font-size: 12.2px;
     line-height: 1.4;
   }
-  .gallery-info h2 {
-    font-size: 14.2px;
-  }
+
+  .gallery-info h2 { font-size: 14.2px; }
 }
