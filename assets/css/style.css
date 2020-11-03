@@ -535,12 +535,12 @@ header .active {
   width: 100%;
   height: 100%;
   display: none;
+  overflow: hidden;
   position: fixed;
   z-index: 100;
   left: 0;
   top: 0;
   background-color: #00160099;
-  overflow: hidden;
 }
 
 .modalToggle { display: block; }
