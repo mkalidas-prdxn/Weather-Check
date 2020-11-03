@@ -8,7 +8,9 @@ function cross() {
   document.body.classList.toggle("body"); //to stop scrolling when menu open
   hamburger.classList.toggle("activeHam");
   hamMenuOpen.classList.toggle("hamMenuOpen");
+  if (document.URL.includes("photo.html")){
   menuBarBackground.classList.toggle("menuBarBackground");
+  }
 }
 
 //=> Display error msg for forms 
