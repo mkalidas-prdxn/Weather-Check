@@ -556,12 +556,12 @@ header .active {
 .modal-scroll {
   width: 100%;
   height: 100%;
+  overflow: auto;
   position: fixed;
   z-index: 100;
   left: 0;
   top: 0;
   background-color: #00106e33;
-  overflow: auto;
 }
 
 .close {
