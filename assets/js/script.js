@@ -8,12 +8,14 @@ function cross() {
   document.body.classList.toggle("body"); //to stop scrolling when menu open
   hamburger.classList.toggle("activeHam");
   hamMenuOpen.classList.toggle("hamMenuOpen");
-  if (document.URL.includes("photo.html")){
+  if (document.URL.includes("photo.html")) {
   menuBarBackground.classList.toggle("menuBarBackground");
   }
 }
 
 //=> Display error msg for forms 
+var node,
+  textnode;
 function errorFunc(errorId, msg, errorClass) {
   if (!document.querySelector("." + errorClass)) {
     //Give error message
@@ -53,9 +55,7 @@ if (document.URL.includes("index.html")) {
 
   //=> Function to display weather information on card
   function cardDisplay(location) {
-    var node,
-      textnode,
-      nameValue,
+    var nameValue,
       timestamp,
       time,
       date,
@@ -119,12 +119,10 @@ if (document.URL.includes("index.html")) {
           document.querySelector(".day").innerHTML = day;
           document.querySelector(".date").innerHTML = date + " " + month;
           document.querySelector(".location").innerHTML = nameValue;
-          document.querySelector(".num").innerHTML =
-            tempValue + "<sup>o</sup>C";
+          document.querySelector(".num").innerHTML = tempValue + "<sup>o</sup>C";
           document.querySelector(".humidity").innerHTML = humidity + "%";
           document.querySelector(".wind").innerHTML = wind + "m/sec";
-          document.querySelector(".direction").innerHTML =
-            direction + " &#7506;";
+          document.querySelector(".direction").innerHTML = direction + " &#7506;";
 
           var urlSnap; //To load correct weather icon
           switch (weatherIcon) {
@@ -158,27 +156,19 @@ if (document.URL.includes("index.html")) {
             default:
               urlSnap = "1";
           }
-          document.getElementById("weather-icon").src =
-            "assets/images/icons/icon-" + urlSnap + ".svg";
-
-          document
-            .querySelector(".weather-body")
-            .classList.remove("weather-fade");
+          document.getElementById("weather-icon").src = "assets/images/icons/icon-" + urlSnap + ".svg";
+          document.querySelector(".weather-body").classList.remove("weather-fade");
 
           if (document.querySelector(".errorMsg")) {
             document.querySelector(".errorMsg").remove();
-
           }
         })
-
-
         //To display error message when api fails or the value submitted by user is not equivalent to any city name
         .catch(function(err) {
           errorFunc("formBar", "Error fetching the data or incorrect city name", "errorMsg");
         });
     }
   }
-
 
   //=> Modal
   var modal = document.getElementById("myModal"),
@@ -192,7 +182,6 @@ if (document.URL.includes("index.html")) {
 
   // Function to display modal image
   imgModal.forEach(imgFunction);
-
   function imgFunction(item, index) {
     imgModal[index].addEventListener("click", function() {
       var imgSrc = parseInt(index) + 1;
@@ -201,9 +190,9 @@ if (document.URL.includes("index.html")) {
       document.body.classList.add("body");
     });
   }
+  
   // Function to display modal video
   videoSelect.forEach(videoFunction);
-
   function videoFunction(item, index) {
     videoSelect[index].addEventListener("click", function() {
       if (item.id == "video2" || item.id == "video4") {
@@ -225,27 +214,16 @@ if (document.URL.includes("index.html")) {
     imgId.classList.remove("modalToggle");
     document.body.classList.remove("body");
   };
-
-  // window.onclick = function (event) {
-  //   if (event.target == modal) {
-  //     modal.style.display = "none";
-  //     imgId.style.display = "none";
-  //     var element = document.querySelector(".container");
-  //     element.classList.remove("modalOpen");
-  //     document.body.style.overflow = "auto";
-  //   }
-  // };
 } else if (document.URL.includes("photo.html")) {
   //set autocomplete => off for email
   document.getElementById("email").setAttribute("autocomplete", "off");
-
   var spanGallery = document.querySelector(".closeGallery"),
     galleryId = document.getElementById("myModal-gallery"),
     gallery = document.getElementById("myGallery"),
     galleryModal = document.querySelectorAll(".gallery-image");
 
-  galleryModal.forEach(galleryFunction);
   //show gallery image clicked as a modal
+  galleryModal.forEach(galleryFunction);
   function galleryFunction(item, index) {
     galleryModal[index].addEventListener("click", function() {
       gallery.src = "assets/images/" + this.id + ".jpg";
@@ -261,7 +239,6 @@ if (document.URL.includes("index.html")) {
   };
 }
 
-
 //=> redirect user to mail client with information filled when user wants to subscribe
 var subscribe = document.getElementById("subscribe");
 subscribe.addEventListener("click", function(e) {
@@ -271,7 +248,6 @@ subscribe.addEventListener("click", function(e) {
   //to gives error msg if the naming of email is not correct
   if (!emailLetters.test(body)) {
     errorFunc("emailBar", "Please enter correct email", "errorMsgEmail");
-
   } else {
     //Remove error msg if email is correct
     if (document.querySelector(".errorMsgEmail")) {
