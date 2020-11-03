@@ -877,7 +877,7 @@ video { width: 100%; }
 }
 
 .main-bar-url { text-transform: capitalize; }
-.main-bar-url span { color: white; }
+.main-bar-url span { color: #fff; }
 
 /* 5.2. Gallery
    ========================================================================== */
@@ -1171,8 +1171,8 @@ footer input[type~="submit"]:hover {
   .hamburger:hover .line { background-color: #069ad8; }
 
   .line {
-    height: 2px;
     width: 20px;
+    height: 2px;
     display: block;
     position: absolute;
     right: 10%;
@@ -1217,12 +1217,12 @@ footer input[type~="submit"]:hover {
     width: 0%;
     height: 85%;
     display: block;
+    overflow: hidden;
     position: absolute;
     z-index: 10;
     top: 145px;
     right: 0;
     background-color: #1e202b;
-    overflow: hidden;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
@@ -1295,8 +1295,8 @@ footer input[type~="submit"]:hover {
   footer input[name~="subscribe"] { padding: 0px 15px; }
 
   .social-icons {
-    margin: auto;
     width: 100%;
+    margin: auto;
     display: block;
     text-align: center;
   }
