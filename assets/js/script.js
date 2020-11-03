@@ -72,7 +72,7 @@ if (document.URL.includes("index.html")) {
     } else {
       //Get weather information from openWeather api
       fetch(
-        "http://api.openweathermap.org/data/2.5/weather?q=" +
+        "https://api.openweathermap.org/data/2.5/weather?q=" +
         location +
         "&appid=83810246bd176b904dafa20374e15bec"
         )
