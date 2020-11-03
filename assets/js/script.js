@@ -177,3 +177,86 @@ if (document.URL.includes("index.html")) {
     }
   }
 
+
+  //=> Modal
+  var modal = document.getElementById("myModal"),
+    span = document.querySelector(".close"),
+    video = document.getElementById("myVideo"),
+    videoSelect = document.querySelectorAll(".live-camera-cover"),
+    spanImg = document.querySelector(".closeImg"),
+    imgId = document.getElementById("myModal-img"),
+    img = document.getElementById("myImg"),
+    imgModal = document.querySelectorAll(".img-modal");
+
+  // Function to display modal image
+  imgModal.forEach(imgFunction);
+
+  function imgFunction(item, index) {
+    imgModal[index].addEventListener("click", function() {
+      var imgSrc = parseInt(index) + 1;
+      img.src = "assets/images/thumb-" + imgSrc + ".jpg";
+      imgId.classList.add("modalToggle");
+      document.body.classList.add("body");
+    });
+  }
+  // Function to display modal video
+  videoSelect.forEach(videoFunction);
+
+  function videoFunction(item, index) {
+    videoSelect[index].addEventListener("click", function() {
+      if (item.id == "video2" || item.id == "video4") {
+        video.src = "assets/videos/video2.mp4";
+      } else {
+        video.src = "assets/videos/video1.mp4";
+      }
+      modal.classList.add("modalToggle");
+      document.body.classList.add("body");
+    });
+  }
+
+  //close opened modal
+  span.onclick = function() {
+    modal.classList.remove("modalToggle");
+    document.body.classList.remove("body");
+  };
+  spanImg.onclick = function() {
+    imgId.classList.remove("modalToggle");
+    document.body.classList.remove("body");
+  };
+
+  // window.onclick = function (event) {
+  //   if (event.target == modal) {
+  //     modal.style.display = "none";
+  //     imgId.style.display = "none";
+  //     var element = document.querySelector(".container");
+  //     element.classList.remove("modalOpen");
+  //     document.body.style.overflow = "auto";
+  //   }
+  // };
+} else if (document.URL.includes("photo.html")) {
+  //set autocomplete => off for email
+  document.getElementById("email").setAttribute("autocomplete", "off");
+
+  var spanGallery = document.querySelector(".closeGallery"),
+    galleryId = document.getElementById("myModal-gallery"),
+    gallery = document.getElementById("myGallery"),
+    galleryModal = document.querySelectorAll(".gallery-image");
+
+  galleryModal.forEach(galleryFunction);
+  //show gallery image clicked as a modal
+  function galleryFunction(item, index) {
+    galleryModal[index].addEventListener("click", function() {
+      gallery.src = "assets/images/" + this.id + ".jpg";
+      galleryId.classList.add("modalToggle");
+      document.body.classList.add("body");
+    });
+  }
+
+  //close opened gallery modal
+  spanGallery.onclick = function() {
+    galleryId.classList.remove("modalToggle");
+    document.body.classList.remove("body");
+  };
+}
+
+
