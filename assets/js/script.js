@@ -10,3 +10,15 @@ function cross() {
   hamMenuOpen.classList.toggle("hamMenuOpen");
   menuBarBackground.classList.toggle("menuBarBackground");
 }
+
+//=> Display error msg for forms 
+function errorFunc(errorId, msg, errorClass) {
+  if (!document.querySelector("." + errorClass)) {
+    //Give error message
+    node = document.createElement("Span");
+    textnode = document.createTextNode(msg);
+    node.appendChild(textnode);
+    node.setAttribute("class", errorClass);
+    document.getElementById(errorId).appendChild(node);
+  }
+}
