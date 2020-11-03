@@ -1,7 +1,7 @@
 //=> Hamburger menu functionality
 var hamburger = document.getElementById("hamburger"),
-    hamMenuOpen = document.querySelector(".menu"),
-    menuBarBackground = document.querySelector(".main-bar-url");
+  hamMenuOpen = document.querySelector(".menu"),
+  menuBarBackground = document.querySelector(".main-bar-url");
 hamburger.addEventListener("click", cross);
 //Hambuger functiom to open and close menu
 function cross() {
@@ -260,3 +260,30 @@ if (document.URL.includes("index.html")) {
 }
 
 
+//=> redirect user to mail client with information filled when user wants to subscribe
+var subscribe = document.getElementById("subscribe");
+subscribe.addEventListener("click", function(e) {
+  var body = document.getElementById("email").value,
+    emailLetters = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+    sub = "Subscribe to Weather Check news letter";
+  //to gives error msg if the naming of email is not correct
+  if (!emailLetters.test(body)) {
+    errorFunc("emailBar", "Please enter correct email", "errorMsgEmail");
+
+  } else {
+    //Remove error msg if email is correct
+    if (document.querySelector(".errorMsgEmail")) {
+      document.querySelector(".errorMsgEmail").remove();
+    }
+    //redirect user to email client in new tab for subscription
+    window.open(
+      "mailto:weathercheck@example.com?Subject=" +
+      encodeURIComponent(sub) +
+      "&body=" +
+      encodeURIComponent(body)
+    );
+  }
+  //reset the email value in form
+  document.getElementById("email").value = null;
+  e.preventDefault();
+});
